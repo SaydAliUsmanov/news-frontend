@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './style.scss'
+import cl from './style.module.scss'
 
 const Counter = () => {
   const [state, setState] = useState(0)
@@ -9,9 +9,9 @@ const Counter = () => {
   }
 
   return (
-    <div className='wrapper'>
+    <div>
       <div className='count'>{state}</div>
-      <button className="inc" onClick={hancldeClick}>+</button>
+      <button className={cl.inc} onClick={hancldeClick}>+</button>
     </div>
   );
 };
